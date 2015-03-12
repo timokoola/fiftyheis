@@ -43,8 +43,9 @@ class MyStreamer(TwythonStreamer):
             if data["user"]["screen_name"] == me:
                 print "My own tweet"
                 return
+            replyto = "@%s" % data["user"]["screen_name"]
             text = r.choice(heis) 
-            status = text[0].upper() + text[1:] + "!"
+            status = replyto + text[0].upper() + text[1:] + "!"
             try:
                 api.update_status(status=status, in_reply_to_status_id=data["id"])
             except TwythonError:
