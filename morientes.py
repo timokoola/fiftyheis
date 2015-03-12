@@ -48,7 +48,7 @@ class MyStreamer(TwythonStreamer):
             try:
                 api.update_status(status=status, in_reply_to_status_id=data["id"])
             except TwythonError:
-                print "Duplicate"
+                api.update_status(status="Sori, ei oikein irtoa (%f)" % time.time())
 
     def on_error(self, status_code, data):
         print status_code
