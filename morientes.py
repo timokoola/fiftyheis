@@ -12,7 +12,7 @@ r = random.Random()
 
 heis = ["moi", "moikka", "mitäs", "terve", "terppa", "morienttes", "mitämitä", "tsaukki", "mitä äijä", "heippa", "hellurei", "hei sun heiluvilles", "moro", "poro", "päivää", "päevää", "morjens", "tervis", "terskamaheppi", "termos", "heissan", "morjestarallaa", "terve mieheen", "moikku", "hola", "heissuli", "jassoo", "hejdå", "vieläk sääki elät", "helou", "tervehdys", "terve vaan terve", "tsau", "kuisso", "moikkandeeros", "heip", "moikkanen", "komiaa", "moro nääs", "muija", "tähän käteen", "terveisii", "ehtoota talohon", "hai sie", "huomentapäivää", "tseenare", "aloha", "tere", "jumalan terve", "heipparallaa"]
 
-keyfile = "test.keys"
+keyfile = "fiftyheis.keys"
 me = "fiftyheis"
 api = None
 ats = re.compile("@\w+")
